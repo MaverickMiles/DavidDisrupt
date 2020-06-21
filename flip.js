@@ -1,7 +1,7 @@
+var played = false;
+
 function loadApp() {
-            
     $('#canvas').fadeIn(5000);
-   
     // setTimeout(function(){$('#canvas').fadeIn(2000);},3000);
     
 
@@ -274,7 +274,33 @@ $('.zoom-icon').bind('mouseover', function() {
 
 $('#canvas').hide();
 
+// $( document ).ready(() => {document.getElementById('wonderful').play();})
+// document.getElementById('canvas').addEventListener('mouseover',function(){
+    
+//     if (!played){
+//         document.getElementById('wonderful').play();
+//         played = true;
+//     }
+        
+//     }); 
 
+    document.getElementById('canvas').addEventListener('click',function(){
+            if (!played){
+            document.getElementById('wonderful').play();
+            played = true;
+        }
+            
+        });
+
+// $( document ).ready(() => {
+//     alert("Welcome");
+// });
+// var audio = document.getElementById('wonderful');
+// audio.addEventListener("load", function() {
+//     console.log('play');
+//     audio.play();
+//   }, true);
+// });
 // Load the HTML4 version if there's not CSS transform
 
 yepnope({
