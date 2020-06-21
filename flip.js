@@ -275,14 +275,14 @@ $('.zoom-icon').bind('mouseover', function() {
 $('#canvas').hide();
 
 // $( document ).ready(() => {document.getElementById('wonderful').play();})
-// document.getElementById('canvas').addEventListener('mouseover',function(){
+document.getElementById('canvas').addEventListener('mouseover',function(){
     
-//     if (!played){
-//         document.getElementById('wonderful').play();
-//         played = true;
-//     }
+    if (!played){
+        document.getElementById('wonderful').play();
+        played = true;
+    }
         
-//     }); 
+    }); 
 
     document.getElementById('canvas').addEventListener('click',function(){
             if (!played){
