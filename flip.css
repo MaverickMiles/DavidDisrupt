@@ -9,6 +9,7 @@ html{
 body{
     color: white;
     align-items: center;
+    text-align: center;
     background: rgb(103, 209, 236);
     background: linear-gradient(
         rgba(103, 209, 236, 0.8),
@@ -21,6 +22,7 @@ body{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    /* display:flex; */
     
 }
 
@@ -34,4 +36,10 @@ body{
     width: 100vw;
     height: 100vh;
     z-index:999;
+}
+
+#canvas{
+    align-items: center;
+    text-align: center;
+
 }
