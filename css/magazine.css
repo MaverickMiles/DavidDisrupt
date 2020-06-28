@@ -1,4 +1,5 @@
 html, body {
+  position: fixed;
   height: 100vh;
   width: 100vw;
   resize: none;

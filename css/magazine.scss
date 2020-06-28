@@ -6,6 +6,7 @@ $button-width: 30px;
 $button-height: 600px;
 
 html, body {
+    position: fixed;
     height: 100vh;
     width: 100vw;
     resize: none;	
@@ -31,6 +32,11 @@ body{
     background-size: cover;
 }
 
+// #canvas{
+//     height: 100vh;
+//     width: 100vw;
+//     z-index:999;
+// }
 .magazine-viewport .container{
 	position:absolute;
 	top:50%;
