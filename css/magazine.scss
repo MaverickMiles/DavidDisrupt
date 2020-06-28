@@ -2,12 +2,13 @@ $page-width : 922px;
 $page-height: 600px;
 $loader-width: 22px;
 $loader-height: 22px;
-$button-width: 22px;
+$button-width: 30px;
 $button-height: 600px;
 
 html, body {
     height: 100vh;
-    width: 100vw;	
+    width: 100vw;
+    resize: none;	
 }
   
 body{

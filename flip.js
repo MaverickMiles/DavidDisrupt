@@ -75,6 +75,7 @@ function loadApp() {
 
                    if (page==1) { 
                        $(this).turn('peel', 'br');
+                       $('.next-button').addClass('next-button-hover');
                    }
 
                },
