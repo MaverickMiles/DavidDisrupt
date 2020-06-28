@@ -57,7 +57,7 @@
       var particles = [];
   
       if (X < 768) {
-        particleNum = 3;
+        particleNum = 4;
       }
   
       function Particle(ctx, x, y) {
