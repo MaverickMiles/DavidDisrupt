@@ -28,7 +28,7 @@ function loadApp() {
 
            // Duration in millisecond
 
-           duration: 1000,
+           duration: 1500,
 
            // Enables gradients
 
@@ -40,7 +40,7 @@ function loadApp() {
 
            // Elevation from the edge of the flipbook when turning a page
 
-           elevation: 50,
+           elevation: 200,
 
            // The number of pages
 
@@ -95,7 +95,7 @@ function loadApp() {
 
    $(document).keydown(function(e){
 
-       var previous = 37, next = 39, esc = 27;
+       var previous = 37, next = 39;
 
        switch (e.keyCode) {
            case previous:
@@ -109,12 +109,6 @@ function loadApp() {
 
                //right arrow
                $('.magazine').turn('next');
-               e.preventDefault();
-
-           break;
-           case esc:
-               
-               $('.magazine-viewport').zoom('zoomOut');	
                e.preventDefault();
 
            break;
@@ -140,21 +134,6 @@ function loadApp() {
        }
    });
 
-
-//    $(window).resize(function() {
-//        resizeViewport();
-//    }).bind('orientationchange', function() {
-//        resizeViewport();
-//    });
-
-//    // Regions
-
-//    if ($.isTouch) {
-//        $('.magazine').bind('touchstart', regionClick);
-//    } else {
-//        $('.magazine').click(regionClick);
-//    }
-
    // Events for the next button
 
    $('.next-button').bind($.mouseEvents.over, function() {
@@ -179,7 +158,7 @@ function loadApp() {
 
    });
 
-   // Events for the next button
+   // Events for the previous button
    
    $('.previous-button').bind($.mouseEvents.over, function() {
        
@@ -239,42 +218,14 @@ function loadApp() {
        }
    });
 
-//    resizeViewport();
-
    $('.magazine').addClass('animated');
 
 }
 
 // Zoom icon
 
-$('.zoom-icon').bind('mouseover', function() { 
-    
-    if ($(this).hasClass('zoom-icon-in'))
-        $(this).addClass('zoom-icon-in-hover');
-
-    if ($(this).hasClass('zoom-icon-out'))
-        $(this).addClass('zoom-icon-out-hover');
-
-}).bind('mouseout', function() { 
-    
-     if ($(this).hasClass('zoom-icon-in'))
-        $(this).removeClass('zoom-icon-in-hover');
-    
-    if ($(this).hasClass('zoom-icon-out'))
-        $(this).removeClass('zoom-icon-out-hover');
-
-}).bind('click', function() {
-
-    if ($(this).hasClass('zoom-icon-in'))
-        $('.magazine-viewport').zoom('zoomIn');
-    else if ($(this).hasClass('zoom-icon-out'))	
-       $('.magazine-viewport').zoom('zoomOut');
-
-});
-
 $('#canvas').hide();
 
-// $( document ).ready(() => {document.getElementById('wonderful').play();})
 document.getElementById('canvas').addEventListener('mouseover',function(){
     
     if (!played){
@@ -282,25 +233,17 @@ document.getElementById('canvas').addEventListener('mouseover',function(){
         played = true;
     }
         
-    }); 
+}); 
 
-    document.getElementById('canvas').addEventListener('click',function(){
-            if (!played){
-            document.getElementById('wonderful').play();
-            played = true;
-        }
-            
-        });
+document.getElementById('canvas').addEventListener('click',function(){
+    
+    if (!played){
+        document.getElementById('wonderful').play();
+        played = true;
+    }
 
-// $( document ).ready(() => {
-//     alert("Welcome");
-// });
-// var audio = document.getElementById('wonderful');
-// audio.addEventListener("load", function() {
-//     console.log('play');
-//     audio.play();
-//   }, true);
-// });
+});
+
 // Load the HTML4 version if there's not CSS transform
 
 yepnope({

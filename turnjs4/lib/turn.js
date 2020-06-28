@@ -42,7 +42,7 @@ var has3d,
       out: 'mouseout'
     },
 
-  // Contansts used for each corner
+  // Constants used for each corner
   //   | tl * tr |
   // l | *     * | r
   //   | bl * br |
@@ -75,7 +75,7 @@ var has3d,
 
     // Duration of transition in milliseconds
 
-    duration: 600,
+    duration: 1600,
 
     // First page
 
