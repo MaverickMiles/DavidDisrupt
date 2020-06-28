@@ -22,7 +22,7 @@ body{
     background-size: cover;
 }
 
-#ballon{
+#canvas, .magazine{
     z-index:999;
     align-items: center;
     text-align: center;

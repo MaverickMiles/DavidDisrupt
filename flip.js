@@ -1,7 +1,7 @@
 var played = false;
 
 function loadApp() {
-    $('#canvas').fadeIn(5000);
+    $('#canvas').show();
     // setTimeout(function(){$('#canvas').fadeIn(2000);},3000);
     
 
@@ -141,19 +141,19 @@ function loadApp() {
    });
 
 
-   $(window).resize(function() {
-       resizeViewport();
-   }).bind('orientationchange', function() {
-       resizeViewport();
-   });
+//    $(window).resize(function() {
+//        resizeViewport();
+//    }).bind('orientationchange', function() {
+//        resizeViewport();
+//    });
 
-   // Regions
+//    // Regions
 
-   if ($.isTouch) {
-       $('.magazine').bind('touchstart', regionClick);
-   } else {
-       $('.magazine').click(regionClick);
-   }
+//    if ($.isTouch) {
+//        $('.magazine').bind('touchstart', regionClick);
+//    } else {
+//        $('.magazine').click(regionClick);
+//    }
 
    // Events for the next button
 
@@ -239,7 +239,7 @@ function loadApp() {
        }
    });
 
-   resizeViewport();
+//    resizeViewport();
 
    $('.magazine').addClass('animated');
 
