@@ -1,11 +1,13 @@
 body{
-    align-items: center;
-    text-align: center;
-    
-}
-
-#canvas, .magazine{
-    z-index:999;
-    align-items: center;
-    text-align: center;
+    background: linear-gradient(
+        rgba(103, 209, 236, 0.8),
+        rgba(103, 209, 236, 0.8)),
+        linear-gradient(
+        rgba(3, 3, 3, 0.3),
+        rgba(7, 7, 7, 0.3))
+        no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
