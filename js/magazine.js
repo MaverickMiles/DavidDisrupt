@@ -96,13 +96,6 @@ function regionClick(event) {
 
 }
 
-// Process the data of every region
-
-
-// Load large page
-
-// http://code.google.com/p/chromium/issues/detail?id=128488
-
 function isChrome() {
 
 	return navigator.userAgent.indexOf('Chrome')!=-1;
@@ -121,10 +114,6 @@ function disableControls(page) {
 			$('.next-button').show();
 }
 
-// Set the width and height for the viewport
-
-
-// Number of views in a flipbook
 
 function numberOfViews(book) {
 	return book.turn('pages') / 2 + 1;
